@@ -5,7 +5,7 @@ function injectHeader() {
   const headerHTML = `
     <header class="site-header">
       <div class="container header-inner">
-      <a class="logo" href="/Portfolio/">af.code</a>
+      <a class="logo" href="/Portfolio/index.html">af.code</a>
 
         <button
           class="nav-toggle"
@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
   injectHeader();
   injectFooter();
 });
+
 
 
 
