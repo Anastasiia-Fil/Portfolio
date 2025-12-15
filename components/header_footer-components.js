@@ -16,10 +16,10 @@ function injectHeader() {
         </button>
 
         <nav id="main-nav" class="nav" aria-label="Main navigation">
-          <a href="/index.html#projects">Projects</a>
-          <a href="/pages/Cheatsheet.html">Cheat sheets</a>
-          <a href="/pages/Resume.html">Resume</a>
-          <a href="/pages/hobbies.html">My hobbies</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="pages/Cheatsheet.html">Cheat sheets</a>
+          <a href="pages/Resume.html">Resume</a>
+          <a href="pages/hobbies.html">My hobbies</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -154,3 +154,4 @@ document.addEventListener("DOMContentLoaded", () => {
   injectHeader();
   injectFooter();
 });
+
