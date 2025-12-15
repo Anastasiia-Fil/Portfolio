@@ -1,0 +1,182 @@
+/* Sparkle text*/
+   .sparkle {
+    color: #eaea78;
+    font-weight: 400;
+    text-shadow: 0 0 5px rgba(239, 236, 219, 0.8);
+    animation: sparkle 2s infinite alternate;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      text-shadow:
+        0 0 5px rgba(255, 215, 0, 0.8),
+        0 0 10px rgba(255, 215, 0, 0.6);
+    }
+    50% {
+      text-shadow:
+        0 0 10px rgba(255, 215, 0, 1),
+        0 0 20px rgba(255, 215, 0, 0.8);
+    }
+    100% {
+      text-shadow:
+        0 0 5px rgba(255, 215, 0, 0.8),
+        0 0 10px rgba(255, 215, 0, 0.6);
+    }
+  }
+  
+  /*Hobby Grid (DESKTOP) */
+  .hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 60px;
+  }
+  
+  /* Hobby Card */
+  .hobby-card {
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    color: var(--main-text-color);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hobby-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 18px 36px rgba(255, 105, 180, 0.35);
+  }
+  
+  .hobby-card h2 {
+    color: var(--neon-pink);
+    letter-spacing: -1px;
+  }
+  
+  .hobby-card p {
+    color: var(--main-text-color);
+  }
+  
+  /* Circle image */
+  .card-circle {
+    width: 80px;
+    height: 80px;
+    margin: -50px auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .card-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Gallery */
+  .card-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .card-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-images img:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+  }
+  
+  /* Info tiles (table replacement) */
+  .card-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .card-table div {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 6px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  /* Card link */
+  .card-link {
+    margin-top: 25px;
+  }
+  
+  .card-link a {
+    color: var(--accent-color2);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .card-link a:hover {
+    color: var(--neon-pink);
+  }
+  
+  /* TABLET ≤ 1024px */
+  @media (max-width: 1024px) {
+  
+    .hobby-grid {
+      gap: 40px;
+    }
+  
+    .hobby-card {
+      padding: 22px 18px;
+    }
+  
+    .card-images img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .card-table {
+      gap: 8px;
+    }
+  }
+  
+  /* MOBILE ≤ 768px */
+  @media (max-width: 768px) {
+  
+    .hobby-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  
+    .hobby-card {
+      padding: 20px 16px;
+    }
+  
+    .card-circle {
+      width: 70px;
+      height: 70px;
+      margin: -40px auto 12px;
+    }
+  
+    .card-images {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    .card-images img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .card-table {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
